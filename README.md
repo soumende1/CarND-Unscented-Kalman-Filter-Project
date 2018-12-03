@@ -59,14 +59,19 @@ The project has the following dependencies (from Udacity's seed project):
 1. Clone this repo.
 Note that the algorithm is captured in the following programs src/ukf.cpp, src/ukf.h, tools.cpp, and tools.h
 The program main.cpp has already been filled out in starter code and is being reused here
+
 2 - Open Ubuntu. Change the working directory to the working folder
+
 3. In the working directory, Compile the code: `cmake . (one dot) && make`
+
 4. Run it using: `./UnscentedKF` 
+
 5 Open the simulator. The output should be
 <code> Listening to port 4567
        Connected!!!
  </code>
- 6 Click the start/Restart button of the simulator
+
+6 Click the start/Restart button of the simulator
 
 ## Editor Settings
 
