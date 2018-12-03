@@ -105,6 +105,7 @@ the code was run with the simulator
 The UKF accuracy was:
 
 Dataset 1 : RMSE = [0.0693, 0.0835, 0.3336, 0.2380]
+
 Dataset 2 : RMSE = [0.0685, 0.0693, 0.5846, 0.2473]
 
 ### Following the Correct Algorithm
