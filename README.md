@@ -64,7 +64,7 @@ The program main.cpp has already been filled out in starter code and is being re
 
 3. In the working directory, Compile the code: `cmake . (one dot) && make`
 
-![here is the Ubunto termina](./images/starting_position.PNG)
+![here is the Ubunto termina](./images/Ubuntu_terminal.PNG)
 
 4. Run it using: `./UnscentedKF` 
 
