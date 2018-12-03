@@ -45,11 +45,11 @@ The project has the following dependencies (from Udacity's seed project):
 
 * cmake >= 3.5
   * All OSes: [click here for installation instructions](https://cmake.org/install/)
-* make >= 4.1 (Linux, Mac), 3.81 (Windows)
+  * make >= 4.1 (Linux, Mac), 3.81 (Windows)
   * Linux: make is installed by default on most Linux distros
   * Mac: [install Xcode command line tools to get make](https://developer.apple.com/xcode/features/)
   * Windows: [Click here for installation instructions](http://gnuwin32.sourceforge.net/packages/make.htm)
-* gcc/g++ >= 5.4
+  * gcc/g++ >= 5.4
   * Linux: gcc / g++ is installed by default on most Linux distros
   * Mac: same deal as make - [install Xcode command line tools](https://developer.apple.com/xcode/features/)
   * Windows: recommend using [MinGW](http://www.mingw.org/)
@@ -63,6 +63,8 @@ The program main.cpp has already been filled out in starter code and is being re
 2 - Open Ubuntu. Change the working directory to the working folder
 
 3. In the working directory, Compile the code: `cmake . (one dot) && make`
+
+![here is the Ubunto termina](./images/starting_position.PNG)
 
 4. Run it using: `./UnscentedKF` 
 
@@ -100,6 +102,7 @@ Matlab scripts that can generate additional data.
 Your code should compile.
 No modifications on CMakeList.txt were done in this project. It compiles without errors or warnings.
 
+
 ### Accuracy
 the code was run with the simulator
 The UKF accuracy was:
@@ -124,6 +127,10 @@ Different type of measurements are handled in two places in UKF class:
 
 The Radar measurement in handled in line 354 [src/ukf.cpp](./src/ukf.cpp#L354)
 The Lidar measurement is handled in line 322 [src/ukf.cpp](./src/ukf.cpp#L322)
+
+![here is the screenshot with data set 1](./images/run_dataset1.PNG)
+
+![here is the screenshot with data set 2](./images/run_dataset2.PNG)
 
 
 
