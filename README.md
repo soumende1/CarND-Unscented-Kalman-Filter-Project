@@ -114,15 +114,17 @@ Your Sensor Fusion algorithm follows the general processing flow as taught in th
 The UKF implementation could be found at  [src/ukf.cpp](./src/ukf.cpp#L13). On the ProcessMeasurement method, the Prediction is executed for the prediction step [src/ukf.cpp](./src/ukf.cpp#L196), and methods UpdateRadar [src/ukf.cpp](./src/ukf.cpp#L354) and UpdateLidar [src/ukf.cpp](./src/ukf.cpp#L322)are executed for the update step depending on the measurement type.
 
 ### Your Kalman Filter algorithm handles the first measurements appropriately.
-The first measurement is handled at ProcessMeasurement from line 103 to line 123.
+The first measurement is handled at ProcessMeasurement from line [src/ukf.cpp](./src/ukf.cpp#L103)
 
 ### Your Kalman Filter algorithm first predicts then updates.
-The prediction step is implemented at Prediction method from line 144 to line 186.
+The prediction step is implemented at Prediction method from line [src/ukf.cpp](./src/ukf.cpp#L196)
 
 ### Your Kalman Filter can handle radar and lidar measurements.
 Different type of measurements are handled in two places in UKF class:
 
-For the first measurement from line 103 to line 123.
+The Radar measurement in handled in line [src/ukf.cpp](./src/ukf.cpp#L354)
+The Lidar measurement is handled in line [src/ukf.cpp](./src/ukf.cpp#L322)
+
 For the update step from line 131 to line 136.
 
 
