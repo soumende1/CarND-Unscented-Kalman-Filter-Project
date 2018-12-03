@@ -107,9 +107,9 @@ No modifications on CMakeList.txt were done in this project. It compiles without
 the code was run with the simulator
 The UKF accuracy was:
 
-Dataset 1 : RMSE = [0.0690, 0.0846, 0.3348, 0.2909]
+Dataset 1 : RMSE = [0.0669, 0.0892, 0.3345, 0.2974]
 
-Dataset 2 : RMSE = [0.0977, 0.0655, 0.6421, 0.2657]
+Dataset 2 : RMSE = [0.0681, 0.0593, 0.5525, 0.2810]
 
 ### Following the Correct Algorithm
 Your Sensor Fusion algorithm follows the general processing flow as taught in the preceding lessons.
@@ -130,7 +130,7 @@ The Lidar measurement is handled in line 322 [src/ukf.cpp](./src/ukf.cpp#L322)
 
 
 here is the screenshot with data set 1
-![data set 1] (./images/run_dataset1.PNG)
+![data set 1](./images/run_dataset1.PNG)
 
 
 here is the screenshot with dataset2
