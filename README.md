@@ -96,10 +96,31 @@ Matlab scripts that can generate additional data.
 
 ## Project Instructions and Rubric
 
-This information is only accessible by people who are already enrolled in Term 2
-of CarND. If you are enrolled, see [the project page](https://classroom.udacity.com/nanodegrees/nd013/parts/40f38239-66b6-46ec-ae68-03afd8a601c8/modules/0949fca6-b379-42af-a919-ee50aa304e6a/lessons/c3eb3583-17b2-4d83-abf7-d852ae1b9fff/concepts/f437b8b0-f2d8-43b0-9662-72ac4e4029c1)
-for instructions and the project rubric.
+Compiling
+Your code should compile.
+No modifications on CMakeList.txt were done in this project. It compiles without errors or warnings.
 
-## How to write a README
-A well written README file can enhance your project and portfolio.  Develop your abilities to create professional README files by completing [this free course](https://www.udacity.com/course/writing-readmes--ud777).
+Accuracy
+For the new version of the project, there is now only one data set "obj_pose-laser-radar-synthetic-input.txt". px, py, vx, vy output coordinates must have an RMSE <= [.09, .10, .40, .30] when using the file: "obj_pose-laser-radar-synthetic-input.txt"
+The UKF accuracy was:
+
+Dataset 1 : RMSE = [0.0693, 0.0835, 0.3336, 0.2380]
+Dataset 2 : RMSE = [0.0685, 0.0693, 0.5846, 0.2473]
+Following the Correct Algorithm
+Your Sensor Fusion algorithm follows the general processing flow as taught in the preceding lessons.
+The UKF implementation could be found at src/ukf.cpp. On the ProcessMeasurement method, the Prediction is executed for the prediction step, and methods UpdateRadar and UpdateLidar are executed for the update step depending on the measurement type.
+
+Your Kalman Filter algorithm handles the first measurements appropriately.
+The first measurement is handled at ProcessMeasurement from line 103 to line 123.
+
+Your Kalman Filter algorithm first predicts then updates.
+The prediction step is implemented at Prediction method from line 144 to line 186.
+
+Your Kalman Filter can handle radar and lidar measurements.
+Different type of measurements are handled in two places in UKF class:
+
+For the first measurement from line 103 to line 123.
+For the update step from line 131 to line 136.
+
+
 
