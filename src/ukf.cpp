@@ -19,13 +19,13 @@ UKF::UKF() {
 
 
   // Process noise standard deviation longitudinal acceleration in m/s^2
-  std_a_ = .9;
+  std_a_ = .4; //0.3
 
   // Process noise standard deviation yaw acceleration in rad/s^2
   std_yawdd_ = .9;
 
   // Laser measurement noise standard deviation position1 in m
-  std_laspx_ = 0.15;
+  std_laspx_ = 0.075; //0.15
 
   // Laser measurement noise standard deviation position2 in m
   std_laspy_ = 0.15;
@@ -38,7 +38,7 @@ UKF::UKF() {
 
   // Radar measurement noise standard deviation radius change in m/s
   std_radrd_ = 0.3;
-  
+
   /**
   TODO:
 
@@ -53,7 +53,7 @@ UKF::UKF() {
 
   //set augmented dimension
   n_aug_ = 7;
-  
+
   ///* Sigma point spreading parameter
   lambda_ = 3 - n_x_;
 
@@ -64,8 +64,8 @@ UKF::UKF() {
 	  0, 1, 0, 0, 0;
 
   //measurement covariance matrix - laser
-  R_ << 0.0225, 0,
-	  0, 0.0225;
+  R_ << 0.0125, 0,
+	  0, 0.0125;
 
 
   // initial state vector
@@ -128,7 +128,7 @@ void UKF::ProcessMeasurement(MeasurementPackage meas_package) {
 			const double vx = meas_package.raw_measurements_[2] * cos(meas_package.raw_measurements_[1]);
 			const double vy = meas_package.raw_measurements_[2] * sin(meas_package.raw_measurements_[1]);
 			x_ << m1, m2, vx, vy, 1;
-			
+
 		}
 		else if (meas_package.sensor_type_ == MeasurementPackage::LASER) {
 			/**
@@ -467,5 +467,5 @@ void UKF::UpdateRadar(MeasurementPackage meas_package) {
 
   // NIS calculation
   NIS_RADAR_ = z_diff.transpose() * S.inverse() * z_diff;
-  NIS_LASER_ = -1.0;  
+  NIS_LASER_ = -1.0;
 }
