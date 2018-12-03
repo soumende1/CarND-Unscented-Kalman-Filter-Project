@@ -96,31 +96,29 @@ Matlab scripts that can generate additional data.
 
 ## Project Instructions and Rubric
 
-Roses are <span style="color:red">red</span>, violets are <span style="color:blue">blue</span>.
-
-
-
-Compiling
+### Compiling
 Your code should compile.
 No modifications on CMakeList.txt were done in this project. It compiles without errors or warnings.
 
-Accuracy
-For the new version of the project, there is now only one data set "obj_pose-laser-radar-synthetic-input.txt". px, py, vx, vy output coordinates must have an RMSE <= [.09, .10, .40, .30] when using the file: "obj_pose-laser-radar-synthetic-input.txt"
+### Accuracy
+the code was run with the simulator
 The UKF accuracy was:
 
 Dataset 1 : RMSE = [0.0693, 0.0835, 0.3336, 0.2380]
 Dataset 2 : RMSE = [0.0685, 0.0693, 0.5846, 0.2473]
-Following the Correct Algorithm
+
+### Following the Correct Algorithm
 Your Sensor Fusion algorithm follows the general processing flow as taught in the preceding lessons.
+
 The UKF implementation could be found at src/ukf.cpp. On the ProcessMeasurement method, the Prediction is executed for the prediction step, and methods UpdateRadar and UpdateLidar are executed for the update step depending on the measurement type.
 
-Your Kalman Filter algorithm handles the first measurements appropriately.
+### Your Kalman Filter algorithm handles the first measurements appropriately.
 The first measurement is handled at ProcessMeasurement from line 103 to line 123.
 
-Your Kalman Filter algorithm first predicts then updates.
+### Your Kalman Filter algorithm first predicts then updates.
 The prediction step is implemented at Prediction method from line 144 to line 186.
 
-Your Kalman Filter can handle radar and lidar measurements.
+### Your Kalman Filter can handle radar and lidar measurements.
 Different type of measurements are handled in two places in UKF class:
 
 For the first measurement from line 103 to line 123.
