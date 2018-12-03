@@ -128,9 +128,11 @@ Different type of measurements are handled in two places in UKF class:
 The Radar measurement in handled in line 354 [src/ukf.cpp](./src/ukf.cpp#L354)
 The Lidar measurement is handled in line 322 [src/ukf.cpp](./src/ukf.cpp#L322)
 
-![here is the screenshot with data set 1](./images/run_dataset1.PNG)
+![here is the screenshot with data set 1] 
+(./images/run_dataset1.PNG)
 
-![here is the screenshot with data set 2](./images/run_dataset2.PNG)
+![here is the screenshot with data set 2]
+(./images/run_dataset2.PNG)
 
 
 
