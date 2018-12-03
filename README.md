@@ -40,7 +40,9 @@ OUTPUT: values provided by the c++ program to the simulator
 
 ---
 
-## Other Important Dependencies
+## Prerequisites - Important Dependencies
+The project has the following dependencies (from Udacity's seed project):
+
 * cmake >= 3.5
   * All OSes: [click here for installation instructions](https://cmake.org/install/)
 * make >= 4.1 (Linux, Mac), 3.81 (Windows)
@@ -52,13 +54,19 @@ OUTPUT: values provided by the c++ program to the simulator
   * Mac: same deal as make - [install Xcode command line tools](https://developer.apple.com/xcode/features/)
   * Windows: recommend using [MinGW](http://www.mingw.org/)
 
-## Basic Build Instructions
+## Compiling and Executing the Project
 
 1. Clone this repo.
-2. Make a build directory: `mkdir build && cd build`
-3. Compile: `cmake .. && make`
-4. Run it: `./UnscentedKF` Previous versions use i/o from text files.  The current state uses i/o
-from the simulator.
+Note that the algorithm is captured in the following programs src/ukf.cpp, src/ukf.h, tools.cpp, and tools.h
+The program main.cpp has already been filled out in starter code and is being reused here
+2 - Open Ubuntu. Change the working directory to the working folder
+3. In the working directory, Compile the code: `cmake . (one dot) && make`
+4. Run it using: `./UnscentedKF` 
+5 Open the simulator. The output should be
+<code> Listening to port 4567
+       Connected!!!
+ </code>
+ 6 Click the start/Restart button of the simulator
 
 ## Editor Settings
 
