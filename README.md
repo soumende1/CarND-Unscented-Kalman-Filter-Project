@@ -94,7 +94,9 @@ If you'd like to generate your own radar and lidar data, see the
 [utilities repo](https://github.com/udacity/CarND-Mercedes-SF-Utilities) for
 Matlab scripts that can generate additional data.
 
-## Project Instructions and <span style="color:blue">Rubric</span>
+## Project Instructions and Rubric
+
+Roses are <span style="color:red">red</span>, violets are <span style="color:blue">blue</span>.
 
 
 
